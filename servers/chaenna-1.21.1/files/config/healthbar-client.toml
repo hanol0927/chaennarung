@@ -1,0 +1,55 @@
+[rendering]
+	#Overall billboard scale. Higher value = bigger bar.
+	# Default: 0.05
+	# Range: 0.001 ~ 1.0
+	scale = 0.05
+	#Extra vertical offset above the entity, in blocks.
+	# Default: 0.3
+	# Range: -10.0 ~ 10.0
+	y_offset = 0.3
+	#Extra lift applied when the entity already shows a name tag.
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	nametag_lift = 0.5
+	#Frame texture width in scaled units.
+	# Default: 40.0
+	# Range: 1.0 ~ 500.0
+	frame_width = 40.0
+	#Frame texture height in scaled units.
+	# Default: 4.36
+	# Range: 0.1 ~ 100.0
+	frame_height = 4.36
+	#Fill texture width. Default matches frame so the fill sits inside the frame perfectly.
+	# Default: 40.0
+	# Range: 0.1 ~ 500.0
+	fill_width = 40.0
+	#Fill texture height. Default matches frame.
+	# Default: 4.36
+	# Range: 0.05 ~ 100.0
+	fill_height = 4.36
+	#Fine X offset of the fill relative to the frame center.
+	# Default: 0.0
+	# Range: -100.0 ~ 100.0
+	fill_offset_x = 0.0
+	#Fine Y offset of the fill relative to the frame center.
+	# Default: 0.0
+	# Range: -100.0 ~ 100.0
+	fill_offset_y = 0.0
+	#When true, the bar drains from right to left (default).
+	reverse_drain = true
+	#Depth offset of the fill relative to the frame.
+	#Negative pushes the fill closer to the camera, positive pushes it away.
+	#Flip the sign if the fill is hidden behind the frame on your machine.
+	# Default: 0.1
+	# Range: -10.0 ~ 10.0
+	fill_z_offset = 0.1
+
+[behaviour]
+	#Maximum distance in blocks at which the bar is drawn.
+	# Default: 64.0
+	# Range: 1.0 ~ 256.0
+	max_render_distance = 64.0
+	#Seconds the bar stays visible after the entity has returned to full health.
+	# Default: 20
+	# Range: 1 ~ 600
+	fade_seconds = 20

@@ -1,0 +1,61 @@
+#Statshown client HUD configuration. Changes are applied live on save.
+[hud]
+	#Background position on screen (top-left corner, pixels).
+	# Default: 4
+	# Range: 0 ~ 10000
+	backgroundX = 4
+	# Default: 4
+	# Range: 0 ~ 10000
+	backgroundY = 2
+	#Background height (pixels). Source texture is scaled to fit.
+	# Default: 40
+	# Range: 8 ~ 4096
+	backgroundHeight = 40
+	#Inner padding inside the background where stat text starts.
+	# Default: 14
+	# Range: 0 ~ 1024
+	paddingX = 14
+	# Default: 12
+	# Range: 0 ~ 1024
+	paddingY = 12
+	#Text scale multiplier applied on top of vanilla font.
+	# Default: 1.0
+	# Range: 0.1 ~ 8.0
+	textScale = 1.0
+	#Vertical pixel gap between line 1 and line 2.
+	# Default: 2
+	# Range: 0 ~ 256
+	lineSpacing = 2
+	#Horizontal pixel gap between stats inside a line.
+	# Default: 6
+	# Range: 0 ~ 256
+	statSpacing = 6
+	#ARGB text color (e.g. 0xFFFFFFFF white, 0xFFFFFF55 yellow).
+	# Default: -1
+	# Range: > -2147483648
+	textColor = -1
+	#Draw drop shadow behind text.
+	textShadow = true
+	#Per-stat printf format. %s is icon, second arg is the value (double).
+	statFormat = "%s: %.1f"
+	#Background width is auto-sized to fit the stat text and clamped
+	#between these two values (pixels).
+	# Default: 60
+	# Range: 16 ~ 4096
+	minBackgroundWidth = 60
+	# Default: 1000
+	# Range: 16 ~ 4096
+	maxBackgroundWidth = 1000
+
+#Per-stat icon characters. Defaults use Minecraft's built-in font glyphs.
+[icons]
+	health = "ꐚ"
+	armor = "ꐙ"
+	health_regen = "ꐼ"
+	movement_speed = "ꐜ"
+	knockback_resistance = "ꐻ"
+	attack_damage = "ꐘ"
+	cooldown_reduction = "ꐞ"
+	lifesteal = "ꐽ"
+	crit_chance = "ꐛ"
+	knockback = "ꐺ"
